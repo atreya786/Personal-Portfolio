@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import {
   FaBars,
   FaTimes,
-  FaFacebook,
+  FaInstagram,
   FaGithub,
   FaTwitter,
   FaLinkedin,
@@ -130,16 +130,34 @@ const Navbar = () => {
             <div>
               <div className="grid grid-cols-2 mx-auto w-4/5 gap-10">
                 <div className="flex items-center justify-center rounded-full shadow-md shadow-white p-3 cursor-pointer">
-                  <FaLinkedin size={25} />
+                  <Link href="https://www.linkedin.com/in/atreya-chandan/">
+                    <a>
+                      <FaLinkedin size={25} />
+                    </a>
+                  </Link>
                 </div>
                 <div className="flex items-center justify-center rounded-full shadow-md shadow-white p-3 cursor-pointer">
-                  <FaTwitter size={25} />
+                  <Link href="https://twitter.com/At_re_ya">
+                    <a>
+                      <FaTwitter size={25} />
+                    </a>
+                  </Link>
                 </div>
+
                 <div className="flex items-center justify-center rounded-full shadow-md shadow-white p-3 cursor-pointer">
-                  <FaFacebook size={25} />
+                  <Link href="https://www.instagram.com/_.atreya._/">
+                    <a>
+                      <FaInstagram size={25} />
+                    </a>
+                  </Link>
                 </div>
+
                 <div className="flex items-center justify-center rounded-full shadow-md shadow-white p-3 cursor-pointer">
-                  <FaGithub size={25} />
+                  <Link href="https://github.com/atreya786">
+                    <a>
+                      <FaGithub size={25} />
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>

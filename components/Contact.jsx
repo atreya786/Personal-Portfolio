@@ -1,8 +1,9 @@
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 import contactus from "../public/assets/contact-us.jpg";
-import { FaFacebook, FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -26,17 +27,35 @@ const Contact = () => {
             </p>
 
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-10">
-              <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-2 sm:p-3 cursor-pointer">
-                <FaLinkedin size={20} />
+              <div className="flex items-center justify-center rounded-full shadow-md shadow-white p-3 cursor-pointer">
+                <Link href="https://www.linkedin.com/in/atreya-chandan/">
+                  <a>
+                    <FaLinkedin size={25} />
+                  </a>
+                </Link>
               </div>
-              <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-2 sm:p-3 cursor-pointer">
-                <FaTwitter size={20} />
+              <div className="flex items-center justify-center rounded-full shadow-md shadow-white p-3 cursor-pointer">
+                <Link href="https://twitter.com/At_re_ya">
+                  <a>
+                    <FaTwitter size={25} />
+                  </a>
+                </Link>
               </div>
-              <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-2 sm:p-3 cursor-pointer">
-                <FaFacebook size={20} />
+
+              <div className="flex items-center justify-center rounded-full shadow-md shadow-white p-3 cursor-pointer">
+                <Link href="https://www.instagram.com/_.atreya._/">
+                  <a>
+                    <FaInstagram size={25} />
+                  </a>
+                </Link>
               </div>
-              <div className="flex items-center justify-center rounded-full shadow-md shadow-blue-500 hover:scale-105 duration-200 p-2 sm:p-3 cursor-pointer">
-                <FaGithub size={20} />
+
+              <div className="flex items-center justify-center rounded-full shadow-md shadow-white p-3 cursor-pointer">
+                <Link href="https://github.com/atreya786">
+                  <a>
+                    <FaGithub size={25} />
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
