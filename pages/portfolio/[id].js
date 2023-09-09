@@ -150,7 +150,7 @@ export async function getStaticProps({ params }) {
 
 const OnePortfolio = ({ portfolio: { title, imageSrc, description } }) => {
   return (
-    <div className="h-fit w-full text-center bg-gray-900 text-white">
+    <div className="h-screen w-full text-center bg-gray-900 text-white">
       <div className="max-w-screen-xl mx-auto w-full h-full pt-12 sm:pt-24 p-4 sm:p-8 flex flex-col">
         <div className="flex">
           <Link href="/portfolio">
