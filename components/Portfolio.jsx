@@ -6,15 +6,6 @@ import urban from "../public/assets/portfolio/urban.png";
 import erp from "../public/assets/portfolio/erp.png";
 import note from "../public/assets/portfolio/keeper-app.png";
 import blog from "../public/assets/portfolio/blog-post .png";
-import calculator from "../public/assets/portfolio/calculator.png";
-import demo from "../public/assets/portfolio/demo-portfolio.png";
-import dice from "../public/assets/portfolio/dice-roll.png";
-import news from "../public/assets/portfolio/newsletter.png";
-import orchestra from "../public/assets/portfolio/orchestra.png";
-import stopwatch from "../public/assets/portfolio/stopwatch.png";
-import tindog from "../public/assets/portfolio/tindog.png";
-import weather from "../public/assets/portfolio/weatherapp.png";
-import bubble from "../public/assets/portfolio/bubble-game.png";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -25,25 +16,25 @@ const Portfolio = () => {
       id: 1,
       title: "Urban Interiors",
       imageSrc: urban,
-      url: "Urban Interiors",
+      url: "urban-interiors",
     },
     {
       id: 2,
       title: "ERP System",
       imageSrc: erp,
-      url: "ERP System",
+      url: "erp-system",
     },
     {
       id: 3,
-      title: "Pens and Pixels",
+      title: "Blog Post",
       imageSrc: blog,
-      url: "Pens and Pixels",
+      url: "blog-post",
     },
     {
       id: 4,
-      title: "Note Keeper",
+      title: "Keeper App",
       imageSrc: note,
-      url: "Note Keeper",
+      url: "keeper-app",
     },
   ];
 

@@ -151,32 +151,32 @@ export async function getStaticProps({ params }) {
 const OnePortfolio = ({ portfolio: { title, imageSrc, description } }) => {
   return (
     <div className="h-fit w-full text-center bg-gray-900 text-white">
-      <div className="max-w-screen-xl mx-auto w-full h-full pt-24 p-8 flex flex-col">
+      <div className="max-w-screen-xl mx-auto w-full h-full pt-12 sm:pt-24 p-4 sm:p-8 flex flex-col">
         <div className="flex">
           <Link href="/portfolio">
-            <div className="flex items-center justify-center my-8 text-indigo-500 font-bold capitalize cursor-pointer">
+            <div className="flex items-center justify-center my-4 sm:my-8 text-indigo-500 font-bold capitalize cursor-pointer">
               <BiChevronLeft size={25} /> back
             </div>
           </Link>
         </div>
 
-        <h1 className="capitalize text-4xl mt-2 mb-8 text-center md:text-left font-bold text-blue-500 tracking-wider">
+        <h1 className="capitalize text-2xl sm:text-4xl mt-2 mb-4 sm:mb-8 text-center sm:text-left font-bold text-blue-500 tracking-wider">
           {title}
         </h1>
 
-        <div className="relative w-96 h-56 mx-auto overflow-hidden my-8">
+        <div className="relative w-80 sm:w-96 h-52 sm:h-56 mx-auto overflow-hidden my-4 sm:my-8">
           <Image src={imageSrc} alt="bla" layout="fill" objectFit="cover" />
         </div>
 
-        <h2 className="text-center md:text-left my-4 text-2xl font-bold">
+        <h2 className="text-center sm:text-left my-4 text-xl font-bold">
           Description
         </h2>
 
-        <p>{description}</p>
+        <p className="text-sm sm:text-base">{description}</p>
 
-        <div className="flex items-center justify-center gap-10">
+        <div className="flex items-center justify-center gap-4 sm:gap-10">
           <Link href="/">
-            <div className="group flex items-center justify-center my-8 bg-blue-600 text-white px-6 py-3 font-bold uppercase rounded-md tracking-wider cursor-pointer">
+            <div className="group flex items-center justify-center my-4 sm:my-8 bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 font-bold uppercase rounded-md tracking-wider cursor-pointer">
               demo
               <span className="duration-200 ease-in">
                 <AiOutlineCaretRight size={18} className="ml-2" />
@@ -185,7 +185,7 @@ const OnePortfolio = ({ portfolio: { title, imageSrc, description } }) => {
           </Link>
 
           <Link href="https://github.com/atreya786">
-            <div className="group flex items-center justify-center my-8 bg-blue-600 text-white px-6 py-3 font-bold uppercase rounded-md tracking-wider cursor-pointer">
+            <div className="group flex items-center justify-center my-4 sm:my-8 bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 font-bold uppercase rounded-md tracking-wider cursor-pointer">
               my portfolio
               <span className="duration-200 ease-in">
                 <FaGithub size={18} className="ml-2" />
