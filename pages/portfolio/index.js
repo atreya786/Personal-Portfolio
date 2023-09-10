@@ -14,8 +14,8 @@ import tindog from "../../public/assets/portfolio/tindog.png";
 import nike from "../../public/assets/portfolio/nike.png";
 import book from "../../public/assets/portfolio/book.png";
 import promptVue from "../../public/assets/portfolio/promptVue.png";
-import reactTube from "../../public/assets/portfolio/reactTube.png";
 import weather from "../../public/assets/portfolio/weatherapp.png";
+import reactTube from "../../public/assets/portfolio/reactTube.png";
 import bubble from "../../public/assets/portfolio/bubble-game.png";
 
 import Link from "next/link";
