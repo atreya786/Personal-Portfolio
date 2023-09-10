@@ -48,7 +48,7 @@ const Navbar = () => {
   return (
     <div
       className={`w-full h-16 z-10 fixed bg-gray-900 text-white duration-300 ease-in ${
-        pageScroll && "bg-black text-[#fff]"
+        pageScroll && "bg-gray-900 text-[#fff]"
       }`}
     >
       <div className="flex justify-between items-center w-full h-full max-w-screen-xl mx-auto p-4">
@@ -83,7 +83,7 @@ const Navbar = () => {
       <div
         className={
           navigation
-            ? "md:hidden fixed left-0 top-0 w-full h-full bg-black/70 backdrop-blur"
+            ? "md:hidden fixed left-0 top-0 w-full h-full bg-gray-900/70 backdrop-blur"
             : ""
         }
       >

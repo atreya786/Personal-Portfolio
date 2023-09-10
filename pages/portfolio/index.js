@@ -15,7 +15,7 @@ import nike from "../../public/assets/portfolio/nike.png";
 import book from "../../public/assets/portfolio/book.png";
 import promptVue from "../../public/assets/portfolio/promptVue.png";
 import weather from "../../public/assets/portfolio/weatherapp.png";
-import reactTube from "../../public/assets/portfolio/reactTube.png";
+import reactTube from "../../public/assets/portfolio/tube.png";
 import bubble from "../../public/assets/portfolio/bubble-game.png";
 
 import Link from "next/link";
@@ -134,16 +134,16 @@ export const getStaticProps = async () => {
 
 const PortfoliosRoute = ({ portfolios }) => {
   return (
-    <div id="portfolio" className="w-full bg-gray-900 text-white">
+    <div id="portfolio" className="w-full bg-gradient-to-br from-red-500 via-orange-600 to-amber-500 text-white">
       <div className="max-w-screen-xl mx-auto pt-24 p-4 text-center md:text-left ">
-        <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-blue-500 font-bold pb-16">
+        <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-white font-bold pb-16">
           portfolio
         </h2>
 
         <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
           {portfolios.map(({ id, title, imageSrc, url }) => (
             <Link key={id} href={`/portfolio/${url}`}>
-              <div className="cursor-pointer group shadow-md shadow-gray-600 overflow-hidden rounded-md">
+              <div className="cursor-pointer group shadow-md shadow-white overflow-hidden rounded-md">
                 <Image
                   src={imageSrc}
                   alt={title}

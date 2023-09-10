@@ -39,9 +39,12 @@ const Portfolio = () => {
   ];
 
   return (
-    <div id="portfolio" className="w-full bg-gray-900 text-white">
+    <div
+      id="portfolio"
+      className="w-full bg-gradient-to-br from-green-600 via-yellow-500 to-teal-500 text-white"
+    >
       <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left">
-        <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-blue-500 font-bold">
+        <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-white font-bold">
           portfolio
         </h2>
         <p className="py-4 max-w-lg">
@@ -53,7 +56,7 @@ const Portfolio = () => {
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
           {portfolios.map(({ id, title, imageSrc, url }) => (
             <Link key={id} href={`/portfolio/${url}`}>
-              <div className="cursor-pointer group shadow-md shadow-blue-400 overflow-hidden rounded-md">
+              <div className="cursor-pointer group shadow-md shadow-white overflow-hidden rounded-md">
                 <Image
                   src={imageSrc}
                   alt={title}
@@ -70,7 +73,7 @@ const Portfolio = () => {
 
         <div className="flex items-center justify-center">
           <Link href="/portfolio">
-            <div className="group flex items-center justify-center my-8 bg-blue-600 text-white px-6 py-3 font-bold uppercase rounded-md tracking-wider cursor-pointer">
+            <div className="group flex items-center justify-center my-8 bg-blue-700 text-white px-6 py-3 font-bold uppercase rounded-md tracking-wider cursor-pointer">
               all projects
               <span className="-rotate-90 duration-100 ease-in group-hover:translate-x-5">
                 <MdExpandMore size={25} />

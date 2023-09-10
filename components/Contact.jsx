@@ -7,13 +7,13 @@ import { FaInstagram, FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div id="contact" className="w-full bg-gray-900">
+    <div id="contact" className="w-full bg-gradient-to-br from-red-600 via-red-500 to-orange-400 text-white">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-8 py-8 sm:py-16 text-center sm:text-left">
-        <h2 className="text-3xl sm:text-5xl tracking-wider uppercase text-blue-500 font-bold">
+        <h2 className="text-3xl sm:text-5xl tracking-wider uppercase text-white font-bold">
           contact
         </h2>
 
-        <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 shadow-xl shadow-blue-400 bg-gray-900 text-white mt-4">
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 shadow-xl shadow-white mt-4">
           <div className="w-full sm:w-1/2 h-full rounded-xl p-4">
             <Image
               src={contactus}
@@ -75,7 +75,7 @@ const Contact = () => {
                     <input
                       type="text"
                       name="name"
-                      className="border-2 rounded-lg p-2 sm:p-3 flex focus:outline-none border-blue-400 bg-gray-800"
+                      className="border-2 rounded-lg p-2 sm:p-3 flex focus:outline-none border-white bg-gray-800"
                     />
                   </div>
                   <div className="flex flex-col col-span-2">
@@ -85,7 +85,7 @@ const Contact = () => {
                     <input
                       type="number"
                       name="phone"
-                      className="border-2 rounded-lg p-2 sm:p-3 flex focus:outline-none bg-gray-800 border-blue-400"
+                      className="border-2 rounded-lg p-2 sm:p-3 flex focus:outline-none bg-gray-800 border-white"
                     />
                   </div>
                   <div className="flex flex-col col-span-2">
@@ -95,7 +95,7 @@ const Contact = () => {
                     <input
                       type="email"
                       name="email"
-                      className="border-2 rounded-lg p-2 sm:p-3 flex focus:outline-none bg-gray-800 border-blue-400"
+                      className="border-2 rounded-lg p-2 sm:p-3 flex focus:outline-none bg-gray-800 border-white"
                     />
                   </div>
                   <div className="flex flex-col col-span-2">
@@ -105,13 +105,13 @@ const Contact = () => {
                     <textarea
                       name="message"
                       rows="6"
-                      className="border-2 rounded-lg p-2 sm:p-3 flex focus:outline-none bg-gray-800 border-blue-400"
+                      className="border-2 rounded-lg p-2 sm:p-3 flex focus:outline-none bg-gray-800 border-white"
                     ></textarea>
                   </div>
                 </div>
 
                 <div className="flex items-center justify-center">
-                  <button className="my-4 sm:my-8 bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 font-bold uppercase rounded-md tracking-wide cursor-pointer hover:scale-105 duration-200">
+                  <button className="my-4 sm:my-8 bg-blue-700 text-white px-4 sm:px-6 py-2 sm:py-3 font-bold uppercase rounded-md tracking-wide cursor-pointer hover:scale-105 duration-200">
                     send message
                   </button>
                 </div>

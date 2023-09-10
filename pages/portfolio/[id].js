@@ -16,7 +16,7 @@ import bubble from "../../public/assets/portfolio/bubble-game.png";
 import book from "../../public/assets/portfolio/book.png";
 import nike from "../../public/assets/portfolio/nike.png";
 import promptVue from "../../public/assets/portfolio/promptVue.png";
-import reactTube from "../../public/assets/portfolio/reactTube.png";
+import reactTube from "../../public/assets/portfolio/tube.png";
 
 import { FaGithub } from "react-icons/fa";
 import { AiOutlineCaretRight } from "react-icons/ai";
@@ -204,17 +204,17 @@ const OnePortfolio = ({
   portfolio: { title, imageSrc, description, url, link },
 }) => {
   return (
-    <div className="h-screen w-full text-center bg-gray-900 text-white">
+    <div className="h-screen w-full text-center bg-gradient-to-br from-cyan-600 via-teal-600 to-green-500 text-white">
       <div className="max-w-screen-xl mx-auto w-full h-full pt-12 sm:pt-24 p-4 sm:p-8 flex flex-col">
         <div className="flex">
           <Link href="/portfolio">
-            <div className="flex items-center justify-center my-4 sm:my-8 text-indigo-500 font-bold capitalize cursor-pointer">
+            <div className="flex items-center justify-center my-4 sm:my-8 text-white font-bold capitalize cursor-pointer">
               <BiChevronLeft size={25} /> back
             </div>
           </Link>
         </div>
 
-        <h1 className="capitalize text-2xl sm:text-4xl mt-2 mb-4 sm:mb-8 text-center sm:text-left font-bold text-blue-500 tracking-wider">
+        <h1 className="capitalize text-2xl sm:text-4xl mt-2 mb-4 sm:mb-8 text-center sm:text-left font-bold text-white tracking-wider">
           {title}
         </h1>
 
