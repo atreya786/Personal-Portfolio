@@ -3,22 +3,9 @@ import React from "react";
 import { MdExpandMore } from "react-icons/md";
 
 import urban from "../public/assets/portfolio/urban.png";
-import blog from "../public/assets/portfolio/blog-post .png";
-import calculator from "../public/assets/portfolio/calculator.png";
-import demo from "../public/assets/portfolio/demo-portfolio.png";
-import dice from "../public/assets/portfolio/dice-roll.png";
 import erp from "../public/assets/portfolio/erp.png";
-import note from "../public/assets/portfolio/keeper-app.png";
-import news from "../public/assets/portfolio/newsletter.png";
-import orchestra from "../public/assets/portfolio/orchestra.png";
-import stopwatch from "../public/assets/portfolio/stopwatch.png";
-import tindog from "../public/assets/portfolio/tindog.png";
-import weather from "../public/assets/portfolio/weatherapp.png";
-import bubble from "../public/assets/portfolio/bubble-game.png";
-import book from "../public/assets/portfolio/book.png";
 import nike from "../public/assets/portfolio/nike.png";
 import promptVue from "../public/assets/portfolio/promptVue.png";
-import reactTube from "../public/assets/portfolio/reactTube.png";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -33,9 +20,9 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      title: "Blog Post",
-      imageSrc: blog,
-      url: "blog-post",
+      title: "ERP System",
+      imageSrc: erp,
+      url: "erp-system",
     },
     {
       id: 3,
@@ -48,84 +35,6 @@ const Portfolio = () => {
       title: "PromptVue",
       imageSrc: promptVue,
       url: "promptvue",
-    },
-    {
-      id: 5,
-      title: "ReactTube",
-      imageSrc: reactTube,
-      url: "reacttube",
-    },
-    {
-      id: 6,
-      title: "Demo Portfolio",
-      imageSrc: demo,
-      url: "demo-portfolio",
-    },
-    {
-      id: 7,
-      title: "Dice Roll App",
-      imageSrc: dice,
-      url: "dice-roll-app",
-    },
-    {
-      id: 8,
-      title: "ERP System",
-      imageSrc: erp,
-      url: "erp-system",
-    },
-    {
-      id: 9,
-      title: "Keeper App",
-      imageSrc: note,
-      url: "keeper-app",
-    },
-    {
-      id: 10,
-      title: "Newsletter Website",
-      imageSrc: news,
-      url: "newsletter-website",
-    },
-    {
-      id: 11,
-      title: "Orchestra Website",
-      imageSrc: orchestra,
-      url: "orchestra-website",
-    },
-    {
-      id: 12,
-      title: "Stopwatch App",
-      imageSrc: stopwatch,
-      url: "stopwatch-app",
-    },
-    {
-      id: 13,
-      title: "Tindog Website",
-      imageSrc: tindog,
-      url: "tindog-website",
-    },
-    {
-      id: 14,
-      title: "Weather App",
-      imageSrc: weather,
-      url: "weather-app",
-    },
-    {
-      id: 15,
-      title: "Bubble Game",
-      imageSrc: bubble,
-      url: "bubble-game",
-    },
-    {
-      id: 16,
-      title: "Calculator App",
-      imageSrc: calculator,
-      url: "calculator-app",
-    },
-    {
-      id: 17,
-      title: "Book Hub",
-      imageSrc: book,
-      url: "book-hub",
     },
   ];
 
