@@ -11,6 +11,10 @@ import news from "../../public/assets/portfolio/newsletter.png";
 import orchestra from "../../public/assets/portfolio/orchestra.png";
 import stopwatch from "../../public/assets/portfolio/stopwatch.png";
 import tindog from "../../public/assets/portfolio/tindog.png";
+import nike from "../../public/assets/portfolio/nike.png";
+import book from "../../public/assets/portfolio/book.png";
+import promptVue from "../../public/assets/portfolio/promptVue.png";
+import reactTube from "../../public/assets/portfolio/reactTube.png";
 import weather from "../../public/assets/portfolio/weatherapp.png";
 import bubble from "../../public/assets/portfolio/bubble-game.png";
 
@@ -33,69 +37,93 @@ export const getStaticProps = async () => {
     },
     {
       id: 3,
-      title: "Calculator App",
-      imageSrc: calculator,
-      url: "calculator-app",
+      title: "Nike",
+      imageSrc: nike,
+      url: "nike",
     },
     {
       id: 4,
+      title: "PromptVue",
+      imageSrc: promptVue,
+      url: "promptvue",
+    },
+    {
+      id: 5,
+      title: "ReactTube",
+      imageSrc: reactTube,
+      url: "reacttube",
+    },
+    {
+      id: 6,
       title: "Demo Portfolio",
       imageSrc: demo,
       url: "demo-portfolio",
     },
     {
-      id: 5,
+      id: 7,
       title: "Dice Roll App",
       imageSrc: dice,
       url: "dice-roll-app",
     },
     {
-      id: 6,
+      id: 8,
       title: "ERP System",
       imageSrc: erp,
       url: "erp-system",
     },
     {
-      id: 7,
+      id: 9,
       title: "Keeper App",
       imageSrc: note,
       url: "keeper-app",
     },
     {
-      id: 8,
+      id: 10,
       title: "Newsletter Website",
       imageSrc: news,
       url: "newsletter-website",
     },
     {
-      id: 9,
+      id: 11,
       title: "Orchestra Website",
       imageSrc: orchestra,
       url: "orchestra-website",
     },
     {
-      id: 10,
+      id: 12,
       title: "Stopwatch App",
       imageSrc: stopwatch,
       url: "stopwatch-app",
     },
     {
-      id: 11,
+      id: 13,
       title: "Tindog Website",
       imageSrc: tindog,
       url: "tindog-website",
     },
     {
-      id: 12,
+      id: 14,
       title: "Weather App",
       imageSrc: weather,
       url: "weather-app",
     },
     {
-      id: 13,
+      id: 15,
       title: "Bubble Game",
       imageSrc: bubble,
       url: "bubble-game",
+    },
+    {
+      id: 16,
+      title: "Calculator App",
+      imageSrc: calculator,
+      url: "calculator-app",
+    },
+    {
+      id: 17,
+      title: "Book Hub",
+      imageSrc: book,
+      url: "book-hub",
     },
   ];
 
@@ -121,6 +149,7 @@ const PortfoliosRoute = ({ portfolios }) => {
                   alt={title}
                   className="rounded-md duration-200 
               hover:scale-110"
+                  loading="lazy"
                 />
                 <h2 className="text-center text-base capitalize my-4 font-light duration-200 group-hover:underline underline-offset-4">
                   {title}

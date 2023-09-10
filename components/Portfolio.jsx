@@ -4,8 +4,8 @@ import { MdExpandMore } from "react-icons/md";
 
 import urban from "../public/assets/portfolio/urban.png";
 import erp from "../public/assets/portfolio/erp.png";
-import note from "../public/assets/portfolio/keeper-app.png";
-import blog from "../public/assets/portfolio/blog-post .png";
+import nike from "../public/assets/portfolio/nike.png";
+import promptVue from "../public/assets/portfolio/promptVue.png";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -26,15 +26,15 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      title: "Blog Post",
-      imageSrc: blog,
-      url: "blog-post",
+      title: "Nike",
+      imageSrc: nike,
+      url: "nike",
     },
     {
       id: 4,
-      title: "Keeper App",
-      imageSrc: note,
-      url: "keeper-app",
+      title: "PromptVue",
+      imageSrc: promptVue,
+      url: "promptvue",
     },
   ];
 
